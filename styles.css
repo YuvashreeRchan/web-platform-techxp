@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  position:fixed;
+  border-bottom: solid 1px rgb(224, 175, 175);
+  background-color: #1b1919;
+  z-index: 1000; /* Set a high z-index to ensure it appears above other elements */
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px rgb(153, 146, 146);
+  text-align: center;
+  text-decoration: none;
+  color: rgb(207, 199, 199);
+}
+
+nav a[aria-current='page'] {
+  color: rgb(20, 19, 19);
+  background-color: #d4d4d4;
+}
+
+main {
+  padding: 25px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.container {
+  padding-top: 0px; 
+  height: calc(150vh - 50px); /* Adjust as needed */
+  overflow: auto;
+}
+
+.content {
+  background-color: #ad5b5b;
+  padding: 20px;
+  margin-top: 0px; /* Adjust as needed */
+}
+.relative {
+  position: relative;
+  top:10px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.absolute {
+  position: absolute;
+  padding: 10px;
+  margin-top: 10px;
+
+  top: 100px;
+  left: 75%;
+  transform: translateX(-50%);
+  background-color: rgb(192, 179, 179); 
+  z-index: 999; /* Set a z-index to ensure it appears above other content */
+
+}
+.stickynote {
+  background-color: #ffc107;
+  padding: 10px;
+  position: sticky;
+  top: 50px; /* Stick to the top */
+  z-index: 200;
+}
+
+.static {
+  position: static;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

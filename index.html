@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Simple Webpage with Navigation Bar</title>
+  
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <main>
+      <h1>Home page</h1>
+    </main>
+
+    <nav class="fixed">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="stickynote">
+      <p>This is a sticky note. It sticks to the top of the viewport when scrolling.</p>
+    </div>
+
+    <div class="container">
+      
+      <div class="content relative">
+        <h1>Welcome to our Website!</h1>
+        <p>This is a simple webpage with a navigation bar.</p>
+        <p>This is the main content of the webpage, positioned below the navigation bar, absolute positioned content, and sticky positioned content.</p>
+      </div>
+      
+      <div class="absolute">
+        <h2>Absolute positioned content</h2>
+        <p>This content is positioned absolutely but appears above the main content,sticky note but below the navigation bar.</p>
+      </div>
+      
+    </div>
+    
+    <footer class="static" id="contact"> 
+    <!-- Added ID for the footer -->
+      <h2>Contact Details</h2>
+      <p>Phone: 123-456-7890</p>
+      <p>Email: pji.yuvashree.r@kalvium.community</p>
+
+
+  </body>
+</html>
